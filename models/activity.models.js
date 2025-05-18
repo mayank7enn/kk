@@ -8,9 +8,18 @@ const Activity = sequelize.define('activities', {
         primaryKey: true,
         allowNull: false,
     },
+    user_id: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
     title: {
         type: DataTypes.STRING,
         allowNull: false,
+    },
+    image: {
+        type: DataTypes.BOOLEAN,
+        allowNull: false,
+        defaultValue: false,
     },
     description: {
         type: DataTypes.TEXT,

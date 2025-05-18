@@ -16,6 +16,11 @@ const Event = sequelize.define('events', {
         type: DataTypes.STRING,
         allowNull: false,
     },
+    image: {
+        type: DataTypes.BOOLEAN,
+        allowNull: false,
+        defaultValue: false,
+    },
     type: {
         type: DataTypes.STRING,
     },

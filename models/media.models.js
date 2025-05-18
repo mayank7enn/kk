@@ -8,7 +8,7 @@ const Media = sequelize.define('media', {
         primaryKey: true,
         allowNull: false,
     },
-    post_id: {
+    ref_id: {
         type: DataTypes.STRING,
         allowNull: false,
     },

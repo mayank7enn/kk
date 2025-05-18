@@ -8,18 +8,26 @@ const Post = sequelize.define('posts', {
         primaryKey: true,
         allowNull: false,
     },
+    image: {
+        type: DataTypes.BOOLEAN,
+        allowNull: false,
+        defaultValue: false,
+    },
     author_id: {
         type: DataTypes.STRING,
         allowNull: false,
     },
     community_id: {
         type: DataTypes.STRING,
+        allowNull: true,
     },
     activity_id: {
         type: DataTypes.STRING,
+        allowNull: true,
     },
     event_id: {
         type: DataTypes.STRING,
+        allowNull: true,
     },
     content: {
         type: DataTypes.TEXT,
